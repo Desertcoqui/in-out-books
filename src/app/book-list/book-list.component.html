@@ -1,0 +1,48 @@
+<!-- // Title: Assignment 5.3 Data Tables
+// Author: Prof Krasso
+// Date: Nov 18 2022
+// Modified: Detres
+//Week-5 exercises/videos
+//https://www.npmjs.com/package/bootstrap-icons
+//https://angular.io/api/router/RouterLink
+//https://angular.io/tutorial/toh-pt5
+// https://stackoverflow.com/questions/41370760/difference-between-routerlink-and-routerlink
+//https://youtu.be/d6gJLs3ZZII
+//https://stackoverflow.com/questions/74114391/npm-install-err-code-eresolve-while-resolving-angular-user-idle3-0-0 -->
+
+<div fxLayout="column wrap">
+  <h2 fxFlex class="green">5 Favorite Books</h2>
+
+  <!-- Table displays books -->
+  <table style="width: 100%;" fxFlex mat-table [dataSource]="books" class="mat-elevation-z8">
+    <tr mat-header-row *matHeaderRowDef="header"></tr>
+    <tr mat-row *matRowDef="let row; columns: header;"></tr>
+
+    <ng-container matColumnDef="isbn">
+      <th mat-header-cell *matHeaderCellDef>ISBN</th>
+      <td mat-cell *matCellDef="let element">
+        <a class="a-link blue hover:cursor" (click)="showBookDetails(element.isbn)">
+          {{ element.isbn }}
+        </a>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef>Title</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.title }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="numOfPages">
+      <th mat-header-cell *matHeaderCellDef>Number of Pages</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.numOfPages }}
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="authors">
+      <th mat-header-cell *matHeaderCellDef>Authors</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.authors.join(', ')}}
+      </td>
+    </ng-container>
+  </table>
+</div>

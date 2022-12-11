@@ -1,0 +1,24 @@
+<!-- // Title: Assignment 6.2 - Output Properties
+// Author: Prof Krasso
+// Date: Nov 26 2022
+// Modified: Detres
+//Week-6 exercises/videos
+// https://www.youtube.com/watch?v=SxAsehrObQo&feature=youtu.be
+
+https://stackoverflow.com/questions/47873128/mat-label-is-not-a-known-element-error-in-latest-angular-material-->
+
+
+<!-- input for Title -->
+<form fxLayout="column" class="wishlist-create-form">
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Title</mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.title" />
+  </mat-form-field>
+
+  <!-- input for Author -->
+  <mat-form-field fxFlex appearance="fill">
+    <mat-label>Authors</mat-label>
+    <input type="text" name="title" matInput [(ngModel)]="item.authors" />
+  </mat-form-field>
+  <button mat-button color="primary" (click)="addItem()">Add Item</button>
+</form>

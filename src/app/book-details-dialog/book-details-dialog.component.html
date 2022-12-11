@@ -1,0 +1,29 @@
+<!-- // Title: Assignment 5.4 dialog
+// Author: Prof Krasso
+// Date: Nov 18 2022
+// Modified: Detres
+//Week-5 exercises/videos
+//https://www.npmjs.com/package/bootstrap-icons
+//https://angular.io/api/router/RouterLink
+//https://angular.io/tutorial/toh-pt5
+// https://stackoverflow.com/questions/41370760/difference-between-routerlink-and-routerlink
+//https://youtu.be/d6gJLs3ZZII
+//https://stackoverflow.com/questions/74114391/npm-install-err-code-eresolve-while-resolving-angular-user-idle3-0-0 -->
+
+<mat-card>
+  <mat-card-title class="blue">
+    {{ book.title }}
+  </mat-card-title>
+  <br /><br />
+  <mat-card-content>
+    <div fxLayout="column" class="book-details">
+      <p>ISBN: {{ book.isbn }}</p>
+      <p>Description:<br /> {{ book.description }}</p>
+      <p>Authors:<br /> {{ book.authors.join(', ')}}</p>
+    </div>
+  </mat-card-content>
+  <!-- action closes the dialog popup -->
+  <mat-card-actions align-content="end">
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+  </mat-card-actions>
+</mat-card>

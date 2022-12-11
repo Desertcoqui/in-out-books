@@ -1,0 +1,53 @@
+// Title: Assignment 5.2 Navigation n layout
+// Author: Prof Krasso
+// Date: Nov 18 2022
+//Modified: Detres
+//Week-5 exercises/videos
+//https://www.npmjs.com/package/bootstrap-icons
+//https://angular.io/api/router/RouterLink
+//https://angular.io/tutorial/toh-pt5
+// https://stackoverflow.com/questions/41370760/difference-between-routerlink-and-routerlink
+//https://youtu.be/d6gJLs3ZZII
+//https://stackoverflow.com/questions/74114391/npm-install-err-code-eresolve-while-resolving-angular-user-idle3-0-0
+
+@import "./theme";
+
+html,
+body {
+  height: 100%;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.blue {
+  color: #2196f3;
+}
+
+.green {
+  color: #66bb6a;
+}
+
+.attribution-link {
+  text-decoration: none;
+  color: white;
+}
+
+.attribution-link:hover {
+  text-decoration: underline;
+}
+
+.card-title-icon {
+  text-align: center;
+}
+
+.card-title-icon,
+.mat-icon {
+  font-size: 72px;
+}
+
+.align-center {
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+<!-- // Title: Assignment 6.2 - Output Properties
+// Author: Prof Krasso
+// Date: Nov 26 2022
+// Modified: Detres
+//Week-6 exercises/videos
+// https://www.youtube.com/watch?v=SxAsehrObQo&feature=youtu.be -->
+
+<!-- Flex Layout column -->
+<div fxLayout=”column”>
+  <!-- app-wishlist-create tag imports from wishlist-create.component.ts -->
+  <!-- addItemEmitter event passing in the updateItemsHandler () -->
+  <app-wishlist-create fxFlex (addItemEmitter)="updateItemsHandler($event)">
+
+  </app-wishlist-create>
+  <br /> <br />
+  <div fxFlex *ngIf="!items || items.length ===0">
+    <h3>Your Wishlist is empty</h3>
+  </div>
+  <div>
+    <mat-list fxFlex *ngIf="items && items.length > 0">
+      <mat-list-item *ngFor="let item of items">
+        <div mat-line>Title: {{item.title}}</div>
+        <div mat-line>Authors: {{item.authors}}</div>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</div>
