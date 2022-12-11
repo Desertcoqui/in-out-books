@@ -54,7 +54,7 @@ export class BookListComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  // onclick displays book-list.component.hmtl
+  // onclick displays book-list.component.html
   showBookDetails(isbn: string) {
     this.book = this.books.find((book) => book.isbn === isbn);
     const dialogRef = this.dialog.open(BookDetailsDialogComponent, {
