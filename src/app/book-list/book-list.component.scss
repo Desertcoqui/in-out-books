@@ -1,0 +1,33 @@
+// Title: Assignment 8.2 - Server-side Communications
+// Author: Professor Krasso
+// Date: Dec 11 2022
+// Modified: Detres
+//Week-8 exercises/videos
+//https://www.youtube.com/watch?v=hAaoPOx_oIw
+//https://openlibrary.org/
+
+.a-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.a-link:hover {
+  text-decoration: underline;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 25px;
+}
+.grid-container__item {
+  padding: 20px;
+  font-size: 30px;
+}
+.grid-container__href:hover {
+  text-decoration: underline;
+}
+.grid-container__href {
+  text-decoration: none;
+  cursor: pointer;
+}

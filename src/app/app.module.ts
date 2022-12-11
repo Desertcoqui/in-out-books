@@ -1,9 +1,10 @@
-// Title: Assignment 6.2 - Output Properties
-// Author: Prof Krasso
-// Date: Nov 26 2022
+// Title: Assignment 8.2 - Server-side Communications
+// Author: Professor Krasso
+// Date: Dec 11 2022
 // Modified: Detres
-//Week-6 exercises/videos
-// https://www.youtube.com/watch?v=SxAsehrObQo&feature=youtu.be
+//Week-8 exercises/videos
+//https://www.youtube.com/watch?v=hAaoPOx_oIw
+//https://openlibrary.org/
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,6 +21,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 //Component Imports
 import { AppComponent } from './app.component';
@@ -55,6 +58,8 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
+    HttpClientModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
